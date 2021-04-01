@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./Font/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  background-color: #f9faff;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul,
+li {
+  list-style: none;
+}
+button {
+  margin-right: 20px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+.App {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HederContact {
+  width: 700px;
+  background-color: #eaf2ff;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  button {
+    background-color: #eaf2ff;
+    margin: 0 10px;
+  }
+}
+
+.searchInput {
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  margin-bottom: 30px;
+  display: flex;
+  input {
+    padding-left: 10px;
+    flex-grow: 1;
+    border: none;
+  }
+  input:active,
+  input:focus {
+    outline: none !important;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .searchInput__clear {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(139, 145, 221, 0.4);
+  }
+}
+
+.Contact {
+  display: flex;
+  .Contact__Rack {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Contact__sex {
+      width: 40px;
+      height: 40px;
+    }
+    .Contact__mess {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .Contact__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Contact__title {
+    width: 50%;
+    color: #8b91dd;
+  }
+  .m {
+    background-color: rgba(139, 145, 221, 0.4);
+  }
+  .w {
+    background-color: rgba(246, 87, 110, 0.4);
+  }
+  .Contact__fullname {
+    padding: 10px;
+  }
+  .Contact__date {
+    color: #8e8e93;
+    padding-right: 20px;
+  }
+  .colormess {
+    color: #2c7dfa;
+  }
+}
+
+.back {
+  background-color: #eaf2ff;
+}
