@@ -95,6 +95,8 @@ button:focus {
 
 .Contact {
   display: flex;
+  align-items: center;
+
   .Contact__Rack {
     border-radius: 50%;
     width: 50px;
@@ -134,7 +136,7 @@ button:focus {
   }
   .Contact__date {
     color: #8e8e93;
-    padding-right: 20px;
+    padding-right: 15px;
   }
   .colormess {
     color: #2c7dfa;

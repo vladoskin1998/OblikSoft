@@ -3,7 +3,7 @@ let initData = require('../../serverData.json');
 export default function GetDataFromServer() {
     return dispatch => {
         setTimeout(() => {
-            fetch('../serverData.json').then((response) => {
+            fetch('./src/serverData.json').then((response) => {
                 if (response.ok) {
                     return response.json();
                 } else {
@@ -11,7 +11,7 @@ export default function GetDataFromServer() {
                 }
             })
                 .then((responseJson) => {
-                    console.log(responseJson);
+                    dispatch({ type: 'GET_DATA_FROM_SERVER', payload: responseJson })
                 })
                 .catch(() => {
                     dispatch({ type: 'GET_DATA_FROM_SERVER', payload: initData })

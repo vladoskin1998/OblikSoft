@@ -1,8 +1,6 @@
 import React from 'react'
 import { FixedSizeList as List } from 'react-window'
-import Contact from './Contact'
-import { connect } from "react-redux"
-
+import Contact from '../../containers/Contact'
 
 
 export default function ContactList(props) {

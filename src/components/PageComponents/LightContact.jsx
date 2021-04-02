@@ -10,6 +10,7 @@ export default function LightContact({ word, subword }) {
         lightword.push(word.split('')[i])
         blackword.splice(0, 1)
     }
+    
     return (
         <React.Fragment>
             <span className="colormess">{lightword}</span>

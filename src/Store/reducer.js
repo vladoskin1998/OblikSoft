@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import ContactStore from './ContactStore/ContactStore'
-import SearchContact from './SearchModCard/SearchModCard'
+import ContactStore from './Redusers/ContactStore'
+import SearchContact from './Redusers/SearchModCard'
 
 export default combineReducers({
     ContactStore,
